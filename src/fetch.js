@@ -33,7 +33,6 @@ export default function FetchMe() {
         <div className='displayDiv'>
           <h2>{search}</h2>
           <h2>Temperature {city.temp}</h2>
-          <h1>{city.pressure}</h1>
         </div>
       )}
     </div>
