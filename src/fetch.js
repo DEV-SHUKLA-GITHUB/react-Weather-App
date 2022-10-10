@@ -11,8 +11,6 @@ export default function FetchMe() {
     const url = `https://api.openweathermap.org/data/2.5/weather?q= ${search} &units=metric&appid=e18f3037f5555c2e2263ddf6edc42a82`
     const response = await fetch(url);
     const responseJson = await response.json();
-    // .then(response => response.json())
-    // .then(data => console.log(data))
     setCity(responseJson.main);
     console.log(responseJson.main)
     };
